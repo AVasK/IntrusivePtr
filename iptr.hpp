@@ -160,4 +160,6 @@ class MkRefCounted : public T, public RefCounted {
 public:
     template <typename... Args>
     MkRefCounted (Args... args) : T(args...), RefCounted() {}
+    
+    // Add some Copy & Move here & you're welcome!
 };
