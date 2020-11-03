@@ -1,5 +1,5 @@
 #include <iostream>
-#include "IPtr.hpp"
+#include "iptr.hpp"
 
 class A /*: public RefCounted*/ {
 public:

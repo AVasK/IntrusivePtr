@@ -159,7 +159,7 @@ template <typename T>
 class MkRefCounted : public T, public RefCounted {
 public:
     template <typename... Args>
-    MkRefCounted (Args... args) : T(args...), RefCounted() {}
+    MkRefCounted (Args... args) : RefCounted(), T(args...) {}
     
     // Add some Copy & Move here & you're welcome!
 };
